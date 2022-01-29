@@ -1,104 +1,307 @@
-/*===== GOOGLE FONTS =====*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
-
-/*===== VARIABLES CSS =====*/
-:root {
-  --header-height: 3rem;
-  
-  /*========== Colors ==========*/
-  --title-color: #0B0A0A;
-  --text-color: #403A3A;
-  --text-color-light: #707070;
-  --container-color: #FAFAFA;
-  --container-color-alt: #F0EFEF;
-  --body-color: #FCFCFC;
-
-  /*========== Font and typography ==========*/
-  --body-font: 'Poppins', sans-serif;
-  --h1-font-size: 1.5rem;
-  --h2-font-size: 1.25rem;
-  --h3-font-size: 1rem;
-  --normal-font-size: .938rem;
-  --small-font-size: .875rem;
-  --smaller-font-size: .813rem;
-
-  /*========== Font weight ==========*/
-  --font-medium: 500;
-  --font-semi-bold: 600;
-
-  /*========== Margenes ==========*/
-  --mb-1: .5rem;
-  --mb-2: 1rem;
-  --mb-3: 1.5rem;
-
-  /*========== z index ==========*/
-  --z-tooltip: 10;
-  --z-fixed: 100;
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;700&display=swap");
+/*========== Colors ==========*/
+/*========== Font and typography ==========*/
+/*========== Font weight ==========*/
+/*========== Margenes ==========*/
+/*========== z index ==========*/
+/*========== BASE ==========*/
+body {
+  margin: 0 0 3rem 0;
+  padding: 0;
+  font-family: "Comfortaa", cursive;
+  font-size: 0.938rem;
+  background-color: #FCFCFC;
+  color: #403A3A;
+}
+body h1,
+body h2,
+body h3,
+body ul,
+body p {
+  margin: 0;
+}
+body h1,
+body h2,
+body h3 {
+  color: #0B0A0A;
+  font-weight: 500;
+}
+body ul {
+  padding: 0;
+  list-style: none;
+}
+body a {
+  text-decoration: none;
+}
+body img {
+  max-width: 100%;
+  height: auto;
+}
+body .section {
+  padding: 1.5rem 0;
+}
+body .section-title {
+  font-size: 1.25rem;
+  color: #0B0A0A;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.35rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+body .bd-container {
+  max-width: 968px;
+  width: calc(100% - 3rem);
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+body .bd-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+body .l-header {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  background-color: #FCFCFC;
+  box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.1);
+  transition: 0, 25s;
+}
+body i {
+  margin: auto 0.5rem;
 }
 
-/*========== BASE ==========*/
+.nav {
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__logo, .nav__toggle {
+  color: #0B0A0A;
+  font-weight: 500;
+}
+.nav__toggle {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.nav__item {
+  text-align: center;
+}
+.nav__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding-right: 1.5rem;
+}
+.nav__link {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.875rem;
+  color: #707070;
+  font-weight: 500;
+  transition: 0.35s;
+}
+.nav__link:hover {
+  color: #0B0A0A;
+  margin-bottom: 0.5rem;
+}
+.nav__icon {
+  font-size: 1.2rem;
+  margin: auto auto 0.5rem 0.5rem;
+}
+@media screen and (max-width: 968px) {
+  .nav__menu {
+    position: fixed;
+    bottom: -100%;
+    /* dùng $header-height để show */
+    left: 0;
+    width: 100%;
+    padding: 2rem 1.5rem;
+    background-color: #FCFCFC;
+    box-shadow: 0 -1px 0.5rem rgba(0, 0, 0, 0.1);
+    border-radius: 1rem 1rem 0 0;
+    z-index: 100;
+    transition: 0.6s;
+  }
+}
 
+.show-menu {
+  bottom: 3rem;
+}
 
-/*========== Variables Dark theme ==========*/
+.home {
+  position: relative;
+}
+.home .section-title {
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+.home__container {
+  gap: 3rem;
+}
+.home__data {
+  gap: 0.5rem;
+  text-align: center;
+}
+.home__data h1 {
+  margin-top: 1.5rem;
+}
+.home__img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  justify-self: center;
+}
+.home__title {
+  font-size: 1.5rem;
+}
+.home__profession {
+  font-size: 0.938rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+.home__address {
+  gap: 1rem;
+}
+.home__info {
+  display: flex;
+  align-items: center;
+  font-size: 0.875rem;
+}
+.home__icon {
+  font-size: 1.2rem;
+  margin-right: 0.25rem;
+}
+.home__btn-movil {
+  display: inline-block;
+  border: 2px solid #0B0A0A;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  transition: 0.35s;
+  font-weight: 500;
+  margin-top: 1.5rem;
+  color: #0B0A0A;
+}
+.home__btn-movil:hover {
+  background-color: #403A3A;
+  color: #FAFAFA;
+}
 
+.social__link {
+  color: #403A3A;
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.875rem;
+}
+.social__link:hover {
+  color: #0B0A0A;
+}
+.social__container {
+  grid-template-columns: max-content;
+  gap: 1rem;
+}
+.social i {
+  font-size: 1.2rem;
+  margin-right: 0.25rem;
+}
 
-/*========== Button Dark/Light ==========*/
+.profile__desc {
+  text-align: center;
+  line-height: 1.5;
+}
 
+.education__content {
+  display: flex;
+}
+.education__time {
+  padding-right: 1rem;
+}
+.education__rounder {
+  position: relative;
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-color: #707070;
+  border-radius: 50%;
+}
+.education__line {
+  display: inline-block;
+  width: 2px;
+  height: 110%;
+  background-color: #707070;
+  transform: translate(7px, 0);
+}
+.education__data {
+  gap: 0.5rem;
+}
+.education__title {
+  font-size: 1rem;
+}
+.education__studies {
+  font-size: 0.875rem;
+  color: #0B0A0A;
+}
+.education__year {
+  font-size: 0.875rem;
+}
 
-/*========== Font size variables to scale cv ==========*/
+.experience__content {
+  display: flex;
+}
+.experience__time {
+  padding-right: 1rem;
+}
+.experience__rounder {
+  position: relative;
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-color: #707070;
+  border-radius: 50%;
+}
+.experience__line {
+  display: inline-block;
+  width: 2px;
+  height: 110%;
+  background-color: #707070;
+  transform: translate(7px, 0);
+  opacity: 0;
+}
+.experience__data {
+  gap: 0.5rem;
+}
+.experience__title {
+  font-size: 1rem;
+}
+.experience__company {
+  font-size: 0.875rem;
+  color: #0B0A0A;
+}
+.experience__desc {
+  line-height: 1.5;
+  margin-right: 0.5rem;
+}
 
+.skills__content {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+}
+.skills__name {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.skills__circle {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background-color: #403A3A;
+  border-radius: 50%;
+  margin-right: 0.75rem;
+}
 
-/*========== Generate PDF button ==========*/
-
-
-/*========== Classes modified to reduce size and print on A4 sheet ==========*/
-
-
-/*========== CLASS CSS ==========*/
-
-
-/*========== LAYOUT ==========*/
-
-
-/*========== NAV ==========*/
-
-
-/* Show menu */
-
-
-/* Active menu link */
-
-
-/*========== HOME ==========*/
-
-
-/*========== SOCIAL ==========*/
-
-
-/*========== PROFILE ==========*/
-
-
-/*========== EDUCATION AND EXPERIENCE ==========*/
-
-
-/*========== SKILLS AND LANGUAGES ==========*/
-
-
-/*========== CERTIFICATES ==========*/
-
-
-/*========== REFERENCES ==========*/
-
-
-/*========== INTERESTS ==========*/
-
-
-/* Scroll top */
-
-
-/*========== MEDIA QUERIES ==========*/
-/* For small devices, menu two columns */
-
-
-/* Classes modified for large screen size */
-
+/*# sourceMappingURL=styles.css.map */

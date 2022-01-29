@@ -1,0 +1,77 @@
+/*========== BASE ==========*/
+body {
+    margin: 0 0 $header-height 0;
+    padding: 0;
+    font-family: $body-font;
+    font-size: $normal-font-size;
+    background-color: $body-color;
+    color: $text-color;
+
+    h1,
+    h2,
+    h3,
+    ul,
+    p {
+        margin: 0;
+    }
+
+    h1,
+    h2,
+    h3 {
+        color: $title-color;
+        font-weight: $font-medium;
+    }
+
+    ul {
+        padding: 0;
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .section {
+        padding: 1.5rem 0;
+
+        &-title {
+            font-size: $h2-font-size;
+            color: $title-color;
+            font-weight: $font-semi-bold;
+            text-transform: uppercase;
+            letter-spacing: 0.35rem;
+            text-align: center;
+            margin-bottom: $mb-3;
+        }
+    }
+    .bd-container{
+        max-width: 968px;
+        width: calc(100% - 3rem);
+        margin-left: $mb-3;
+        margin-right: $mb-3; 
+    }
+    .bd-grid{
+        display: grid;
+        gap: 1.5rem;
+
+    }
+    .l-header{
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: $z-fixed;
+        background-color: $body-color;
+        box-shadow: 0 -1px 4px rgba($color: #000000, $alpha: 0.1);
+        transition: 0,25s;
+    }
+    i{
+        margin: auto 0.5rem;
+    }
+
+}

@@ -1,96 +1,253 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
 
-        <!--========== BOX ICONS ==========-->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!--========== CSS ==========-->
-        <link rel="stylesheet" href="assets/css/styles.css">
+    <!--========== BOX ICONS ==========-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 
-        <title>Responsive resume cv</title>
-    </head>
-    <body>
-        <!--========== HEADER ==========-->
-        <header class="l-header" id="header">
-            
-        </header>
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="assets/css/styles.css">
 
-        <main class="l-main bd-container">
-            <!-- All elements within this div, is generated in PDF -->
-            <div class="resume" id="area-cv">
-                <div class="resume__left">
-                    <!--========== HOME ==========-->
-                    <section class="home" id="home">
-                        
-                        <!-- Theme change button -->
-                        
+    <title>Hồ sơ thực tập</title>
+</head>
+
+<body>
+    <!--========== HEADER ==========-->
+    <header class="l-header" id="header">
+        <nav class="nav bd-container">
+            <a href="#" class="nav__logo">CƯỜNG</a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__items">
+                        <a href="#home" class="nav__link">
+                            <i class='bx bxs-home nav__icon'></i>Trang Chủ
+                        </a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#profile" class="nav__link">
+                            <i class='bx bxs-user nav__icon'></i>Hồ Sơ
+                        </a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#education" class="nav__link">
+                            <i class='bx bxs-graduation nav__icon'></i>Học Vấn
+                        </a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#skills" class="nav__link">
+                            <i class='bx bxs-receipt nav__icon'></i>Kĩ Năng
+                        </a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#exp" class="nav__link">
+                            <i class='bx bxs-briefcase nav__icon'></i>Kinh Nghiệm
+                        </a>
+                    </li>
+                    <!-- <li class="nav__items">
+                        <a href="#certificates" class="nav__link">
+                            <i class='bx bxs-award nav__icon'></i>Chứng Chỉ
+                        </a>
+                    </li> -->
+                    <li class="nav__items">
+                        <a href="#references" class="nav__link">
+                            <i class='bx bxs-file-export nav__icon'></i>Tham Khảo
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bxs-grid-alt nav__icon'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main bd-container">
+        <!-- All elements within this div, is generated in PDF -->
+        <div class="resume" id="area-cv">
+            <div class="resume__left">
+                <!--========== HOME ==========-->
+                <section class="home" id="home">
+                    <div class="home__container section bd-grid">
     
-                        <!-- Button to generate and download the pdf. Available for desktop. -->
-
-                    </section>          
-                    
-                    <!--========== SOCIAL ==========-->
-                    <section class="social section">
-                        
-                    </section>
-
-                    <!--========== PROFILE ==========-->
-                    <section class="profile section" id="profile">
-                        
-                    </section>
-                    
-                    <!--========== EDUCATION ==========-->
-                    <section class="education section" id="education">
-                        
-                    </section>
+                        <div class="home__data">
+                            <img src="./assets/img/avatar.png" alt="" class="home__img">
+                            <h1 class="home__title"><b>Lê Anh Cường</b></h1>
+                            <h3 class="home__profession">Intern Web Developer</h3>
+                            <div>
+                                <a download="" href="asset/pdf/LeAnhCuongCv.pdf" class="home__btn-movil">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Theme change button -->
 
 
-                    <!--========== SKILLS  ==========-->
-                    <section class="skills section" id="skills">
-                        
-                    </section>
+                    <!-- Button to generate and download the pdf. Available for desktop. -->
+            
+                    <div class="home__address bd-grid">
+                        <h2 class="section-title">Liên hệ</h2>
+                        <span class="home__info">
+                            <i class='bx bxs-map'></i> Hà Nội
+                        </span>
+                        <span class="home__info">
+                            <i class='bx bxs-envelope'></i> cuongedward97@gmai.com
+                        </span>
+                        <span class="home__info">
+                            <i class='bx bxs-phone'></i> +84 327 388 885
+                        </span>
+                    </div>
 
-                </div>
+                </section>
 
-                <div class="resume__right">
-                    <!--========== EXPERIENCE ==========-->
-                    <section class="experience section" id="experience">
-                        
-                    </section>
+                <!--========== Contact ==========-->
+                <section class="social section">
+                    <h2 class="section-title small">Mạng xã hội</h2>
+                    <div class="social__container bd-grid">
+                        <a target="_blank" href="https://fb.com/superanhctm" class="social__link">
+                            <i class='bx bxl-facebook-square'></i>fb.com/superanhctm
+                        </a>
+                        <a target="_blank" href="https://github.com/anhctm1997" class="social__link">
+                            <i class='bx bxl-github'></i>github.com/anhctm1997
+                        </a>
+                        <a target="_blank" href="https://instagram.com/anhctm" class="social__link">
+                            <i class='bx bxl-instagram-alt'></i>@anhctm
+                        </a>
+                    </div>
 
-                    <!--========== CERTIFICATES ==========-->
-                    <section class="certificate section" id="certificates">
-                        
-                    </section>
+                </section>
 
-                    <!--========== REFERENCES ==========-->
-                    <section class="references section" id="references">
-                        
-                    </section>
+                <!--========== PROFILE ==========-->
+                <section class="profile section" id="profile">
+                    <h2 class="section-title">Hồ sơ</h2>
+                    <p class="profile__desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem obcaecati
+                        architecto voluptatem mollitia nostrum, odio, adipisci, fugiat eius ratione ab voluptate
+                        quibusdam laborum placeat? Accusantium a esse dicta tempora doloribus!</p>
 
-                    <!--========== LANGUAGES ==========-->
-                    <section class="languages section">
-                        
-                    </section>
-                    
-                    <!--========== INTERESTS ==========-->
-                    <section class="interests section">
-                        
-                    </section>
-                </div>
-            </div>        
-        </main>
+                </section>
 
-        <!--========== SCROLL TOP ==========-->
-        
+                <!--========== EDUCATION ==========-->
+                <section class="education section" id="education">
+                    <h2 class="section-title">Học Vấn</h2>
+                    <div class="education__container bd-grid">
+                        <div class="education__content">
+                            <div class="education__time">
+                                <span class="education__rounder"></span>
+                                <span class="education__line"></span>
+                            </div>
+                            <div class="education__data bd-grid">
+                                <h3 class="education__title">Công Nghệ Thông Tin</h3>
+                                <span class="education__studies">Đại Học Kinh Tế-Kĩ Thuật Công Nghiệp Hà Nội</span>
+                                <span class="education__year">2016-2021</span>
+                            </div>
+                        </div>
+                        <div class="education__content">
+                            <div class="education__time">
+                                <span class="education__rounder"></span>
+                                <!-- <span class="education__line"></span>   -->
+                            </div>
+                            <div class="education__data bd-grid">
+                                <h3 class="education__title">Lập Trình Web</h3>
+                                <span class="education__studies">Trung tâm đào tạo - VietPro</span>
+                                <span class="education__year">2021</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
-        <!--========== HTML2PDF ==========-->
-        <script src="assets/js/html2pdf.bundle.min.js"></script>
 
-        <!--========== MAIN JS ==========-->
-        <script src="assets/js/main.js"></script>
-    </body>
+                <!--========== SKILLS  ==========-->
+                <section class="skills section" id="skills">
+                    <h2 class="section-title">Kĩ năng</h2>
+                    <div class="skills__content bd-grid">
+                        <ul class="skills__data">
+                            <li class="skills__name"><span class="skills__circle"></span>HTML</li>
+                            <li class="skills__name"><span class="skills__circle"></span>CSS</li>
+                            <li class="skills__name"><span class="skills__circle"></span>Javascript</li>
+                        </ul>
+                        <ul class="skills__data">
+                            <li class="skills__name"><span class="skills__circle"></span>Photoshop</li>
+                            <li class="skills__name"><span class="skills__circle"></span>Sass</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+
+            <div class="resume__right">
+                <!--========== EXPERIENCE ==========-->
+                <section class="experience section" id="experience">
+                    <h2 class="section-title">Kinh Nghiệm</h2>
+                    <div class="experience__container bd-grid">
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                                </span>
+                            </div>
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">Lập trình viên</h3>
+                                <span class="experience__company">Freelance</span>
+                                <p class="experience__desc">Tôi vừa bắt đầu lại với lập trình nên không có nhiều kinh
+                                    nghiệm làm việc, chủ yếu là các dự án nhỏ dùng để học HTML-CSS-JS</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+                <!--========== CERTIFICATES ==========-->
+                <!-- <section class="certificate section" id="certificates">
+                    <h2 class="section-title">Chứng chỉ</h2>
+
+                </section> -->
+
+                <!--========== REFERENCES ==========-->
+                <section class="references section" id="references">
+                    <h2 class="section-title">Tham khảo</h2>
+                    <div class="references__container bd-grid">
+                        <div class="references__content bd-grid">
+                            <span class="references__subtitle">Sơn Đặng</span>
+                            <h3 class="references__title">F8 Educations</h3>
+                            <ul class="references__contact">
+                                <li><a href="https://fullstack.edu.vn/" class="references__link">f8.education.vn</a> </li>
+                                <li>contact@fullstack.edu.vn</li>
+                            </ul>
+                        </div>
+                        <div class="references__content bd-grid">
+                            <span class="references__subtitle">Tuấn</span>
+                            <h3 class="references__title">Evondev</h3>
+                            <ul class="references__contact">
+                                <li><a href="https://evondev.com/" class="references__link">evondev.com</a></li>
+                                <li><a href="https://www.youtube.com/c/evondevfrontend" class="references__link">youtube.com/c/evondevfrontend</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                </section>
+
+                <!--========== LANGUAGES ==========-->
+                <section class="languages section">
+
+                </section>
+
+                <!--========== INTERESTS ==========-->
+                <section class="interests section">
+
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!--========== SCROLL TOP ==========-->
+
+
+    <!--========== HTML2PDF ==========-->
+    <script src="assets/js/html2pdf.bundle.min.js"></script>
+
+    <!--========== MAIN JS ==========-->
+    <script src="assets/js/main.js"></script>
+</body>
+
 </html>

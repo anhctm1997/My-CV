@@ -1,0 +1,19 @@
+.skills{
+    &__content{
+        grid-template-columns: repeat(2,1fr);
+        gap: 0;
+    }
+    &__name{
+        display: flex;
+        align-items: center;
+        margin-bottom: $mb-3;
+    }
+    &__circle{
+        display: inline-block;
+        width: 5px;
+        height: 5px;
+        background-color: $text-color;
+        border-radius: 50%;
+        margin-right: 0.75rem;
+    }
+}

@@ -1,0 +1,19 @@
+.social{
+    &__link{
+        color: $text-color;
+        display: inline-flex;
+        align-items: center;
+        font-size: $small-font-size;
+        &:hover{
+            color: $title-color;
+        }
+    }
+    &__container{
+        grid-template-columns: max-content;
+        gap: 1rem;
+    }
+    & i{
+        font-size: 1.2rem;
+        margin-right: 0.25rem;
+    }
+}
