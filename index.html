@@ -18,7 +18,8 @@
     <!--========== HEADER ==========-->
     <header class="l-header" id="header">
         <nav class="nav bd-container">
-            <a href="#" class="nav__logo">CƯỜNG</a>
+            <a id="nav-name" href="#" class="nav__logo">CƯỜNG</a>
+            <img id="nav-avatar" class="nav__avatar" src="./assets/img/avatar.png" alt="#">
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__items">
@@ -42,7 +43,7 @@
                         </a>
                     </li>
                     <li class="nav__items">
-                        <a href="#exp" class="nav__link">
+                        <a href="#experience" class="nav__link">
                             <i class='bx bxs-briefcase nav__icon'></i>Kinh Nghiệm
                         </a>
                     </li>
@@ -71,7 +72,7 @@
                 <!--========== HOME ==========-->
                 <section class="home" id="home">
                     <div class="home__container section bd-grid">
-    
+
                         <div class="home__data">
                             <img src="./assets/img/avatar.png" alt="" class="home__img">
                             <h1 class="home__title"><b>Lê Anh Cường</b></h1>
@@ -85,18 +86,18 @@
 
 
                     <!-- Button to generate and download the pdf. Available for desktop. -->
-            
+
                     <div class="home__address bd-grid">
                         <h2 class="section-title">Liên hệ</h2>
-                        <span class="home__info">
+                        <a target="_blank" href="https://www.google.com/maps/place/S%C3%B3c+S%C6%A1n,+H%C3%A0+N%E1%BB%99i,+Vi%E1%BB%87t+Nam/" class="home__info">
                             <i class='bx bxs-map'></i> Hà Nội
-                        </span>
-                        <span class="home__info">
+                        </a>
+                        <a target="_blank" href="mailto:cuongedward97@gmail.com" class="home__info">
                             <i class='bx bxs-envelope'></i> cuongedward97@gmai.com
-                        </span>
-                        <span class="home__info">
+                        </a>
+                        <a href="tel:+84327388885" class="home__info">
                             <i class='bx bxs-phone'></i> +84 327 388 885
-                        </span>
+                        </a>
                     </div>
 
                 </section>
@@ -210,8 +211,9 @@
                             <span class="references__subtitle">Sơn Đặng</span>
                             <h3 class="references__title">F8 Educations</h3>
                             <ul class="references__contact">
-                                <li><a href="https://fullstack.edu.vn/" class="references__link">f8.education.vn</a> </li>
-                                <li>contact@fullstack.edu.vn</li>
+                                <li><a href="https://fullstack.edu.vn/" class="references__link">f8.edu.vn</a>
+                                </li>
+                                <li><a href="mailto:contact@fullstack.edu.vn">contact@fullstack.edu.vn</a></li>
                             </ul>
                         </div>
                         <div class="references__content bd-grid">
@@ -219,7 +221,8 @@
                             <h3 class="references__title">Evondev</h3>
                             <ul class="references__contact">
                                 <li><a href="https://evondev.com/" class="references__link">evondev.com</a></li>
-                                <li><a href="https://www.youtube.com/c/evondevfrontend" class="references__link">youtube.com/c/evondevfrontend</a></li>
+                                <li><a href="https://www.youtube.com/c/evondevfrontend"
+                                        class="references__link">youtube.com/c/evondevfrontend</a></li>
 
                             </ul>
                         </div>
@@ -227,20 +230,41 @@
 
                 </section>
 
-                <!--========== LANGUAGES ==========-->
+                <!-- ========== LANGUAGES ==========
                 <section class="languages section">
+                    <h2 class="section-title">Langueges</h2>
+                    <div class="languages__container">
+                        <ul class="languages__content bd-grid">
+                            <li class="languages__name"><span class="languages__circle"></span>English</li>
+                        </ul>
+                    </div>
 
-                </section>
+                </section> -->
 
                 <!--========== INTERESTS ==========-->
                 <section class="interests section">
-
+                    <h2 class="section-title">Sở thích</h2>
+                    <div class="interests__container bd-grid">
+                        <div class="interests__content">
+                            <ion-icon class="interests__icon" name="walk"></ion-icon>
+                            <span class="interests__name">Đi bộ</span>
+                        </div>
+                        <div class="interests__content">
+                            <ion-icon class="interests__icon" name="game-controller"></ion-icon>
+                            <span class="interests__name">Game</span>
+                        </div>
+                        <div class="interests__content">
+                            <ion-icon class="interests__icon" name="logo-youtube"></ion-icon>
+                            <span class="interests__name">Youtube</span>
+                        </div>
+                    </div>
                 </section>
             </div>
         </div>
     </main>
 
     <!--========== SCROLL TOP ==========-->
+    <a href="#home" class="scrolltop" id="scrolltop"><ion-icon name="caret-up-circle"></ion-icon></a>
 
 
     <!--========== HTML2PDF ==========-->
@@ -248,6 +272,9 @@
 
     <!--========== MAIN JS ==========-->
     <script src="assets/js/main.js"></script>
+    <!-- ==================== Ionic.io =============== -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>

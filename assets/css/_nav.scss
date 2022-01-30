@@ -7,8 +7,19 @@
         color: $title-color;
         font-weight: $font-medium;
     }
+    &__logo{
+        visibility: hidden;
+    }
+    &__avatar{
+        position: absolute;
+        height: 2rem;
+        width: 2rem;
+        border-radius: 4px;
+        border: 1px solid $text-color;
+        visibility: hidden;
+    }
 
-    &__toggle{
+    &__toggle i{
         font-size: 1.2rem;
         cursor: pointer;
     }
@@ -57,4 +68,7 @@
 }
 .show-menu{
     bottom: $header-height;
+}
+.show-avatar{
+   visibility: visible;
 }

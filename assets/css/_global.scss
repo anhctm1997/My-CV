@@ -75,3 +75,23 @@ body {
     }
 
 }
+.scrolltop{
+    position: fixed;
+    right: 1rem;
+    bottom: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+    z-index: $z-tooltip;
+    transition: 0.6s;
+    background-color: $container-color-alt;
+    color: $text-color-light;
+    font-size: 1.5rem;
+    visibility: hidden;
+
+}
+.show-scroll{
+    visibility: visible;
+}

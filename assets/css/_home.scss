@@ -33,18 +33,23 @@
     }
     &__address{
         gap: 1rem;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
     }
     &__info{
         display: flex;
         align-items: center;
         font-size: $small-font-size;
-        
-    }
-    &__icon{
+        color:$text-color;
+        text-decoration: none;
+        i{
         font-size: 1.2rem;
         margin-right: 0.25rem;
-
+        }
     }
+
+
+
     &__btn-movil{
         display: inline-block;
         border: 2px solid $title-color;
@@ -57,6 +62,7 @@
         &:hover{
             background-color:$text-color;
             color: $container-color;
+            border: 2px solid $text-color-light;
         }
     }
 }
