@@ -31,11 +31,6 @@
         margin-bottom: $mb-1;
         margin-top: $mb-1;
     }
-    &__address{
-        gap: 1rem;
-        padding-top: 1.5rem;
-        padding-bottom: 1.5rem;
-    }
     &__info{
         display: flex;
         align-items: center;
@@ -64,5 +59,8 @@
             color: $container-color;
             border: 2px solid $text-color-light;
         }
+        // @media screen and(min-width :968px) {
+        //     // display: none;
+        // }
     }
 }

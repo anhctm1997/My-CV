@@ -1,4 +1,5 @@
 /*========== BASE ==========*/
+
 body {
     margin: 0 0 $header-height 0;
     padding: 0;
@@ -49,18 +50,21 @@ body {
             margin-bottom: $mb-3;
         }
     }
-    .bd-container{
+
+    .bd-container {
         max-width: 968px;
         width: calc(100% - 3rem);
         margin-left: $mb-3;
-        margin-right: $mb-3; 
+        margin-right: $mb-3;
     }
-    .bd-grid{
+
+    .bd-grid {
         display: grid;
         gap: 1.5rem;
 
     }
-    .l-header{
+
+    .l-header {
         width: 100%;
         position: fixed;
         bottom: 0;
@@ -68,14 +72,54 @@ body {
         z-index: $z-fixed;
         background-color: $body-color;
         box-shadow: 0 -1px 4px rgba($color: #000000, $alpha: 0.1);
-        transition: 0,25s;
+        transition: 0, 25s;
     }
-    i{
+
+    i {
         margin: auto 0.5rem;
     }
 
+    @media screen and(min-width :968px) {
+        & {
+            margin: 3rem 0;
+        }
+
+        .bd-container {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .l-header,
+        .scrolltop {
+            display: none;
+        }
+
+        .resume {
+            display: grid;
+            grid-template-columns: 0.5fr 1fr;
+            background-color: $container-color;
+            box-shadow: 0 0 8px rgba(13, 12, 12, $alpha: 0.15);
+
+            &__left {
+                background-color: $container-color-alt;
+            }
+
+            &__left,
+            &__right {
+                padding: 0 1.5rem;
+            }
+
+        }
+
+        .section-title {
+            text-align: initial;
+        }
+    }
+
+
 }
-.scrolltop{
+
+.scrolltop {
     position: fixed;
     right: 1rem;
     bottom: 4rem;
@@ -92,6 +136,27 @@ body {
     visibility: hidden;
 
 }
-.show-scroll{
+
+.show-scroll {
     visibility: visible;
+}
+
+.change-theme {
+    position: absolute;
+    right: 0;
+    top: 2.2rem;
+    display: flex;
+    color: $text-color;
+    font-size: 1.2rem;
+    cursor: pointer;
+
+    &:hover {
+        color: $title-color;
+    }
+
+    h1,
+    h2,
+    h3 {
+        color: $title-color;
+    }
 }

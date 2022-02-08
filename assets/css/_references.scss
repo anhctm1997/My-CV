@@ -18,4 +18,13 @@
     &__title{
         font-size: $h3-font-size;
     }
+    @media screen and(min-width :968px) {
+        &__container{
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 1rem;
+            padding: 0 1.25rem;
+        }
+       
+    }
 }

@@ -2,5 +2,12 @@
     &__desc{
         text-align: center;
         line-height: 1.5;
+        
+    }
+    @media screen and (min-width:968px) {
+        &__desc{
+            text-align: initial;
+            
+        }
     }
 }

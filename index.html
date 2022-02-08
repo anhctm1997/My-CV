@@ -14,11 +14,11 @@
     <title>Hồ sơ thực tập</title>
 </head>
 
-<body>
+<body class="light-theme">
     <!--========== HEADER ==========-->
     <header class="l-header" id="header">
         <nav class="nav bd-container">
-            <a id="nav-name" href="#" class="nav__logo">CƯỜNG</a>
+            <a id="nav-name" href="#" class="nav__logo">CƯỜNG<img id="nav-avatar" class="nav__avatar" src="./assets/img/avatar.png" alt="#"></a>
             <img id="nav-avatar" class="nav__avatar" src="./assets/img/avatar.png" alt="#">
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
@@ -77,32 +77,34 @@
                             <img src="./assets/img/avatar.png" alt="" class="home__img">
                             <h1 class="home__title"><b>Lê Anh Cường</b></h1>
                             <h3 class="home__profession">Intern Web Developer</h3>
+                            <!-- Theme change button -->
+                            <!-- <i class='bx bxs-moon change-theme' title="Theme" id="theme-btn"></i> -->
+                            <!-- Button to generate and download the pdf. Available for desktop. -->
                             <div>
                                 <a download="" href="asset/pdf/LeAnhCuongCv.pdf" class="home__btn-movil">Download</a>
                             </div>
+                            <!-- <i class='bx bxs-file-pdf generate-pdf' title="Tải xuống PDF" id="resume-btn"></i> -->
                         </div>
                     </div>
-                    <!-- Theme change button -->
 
-
-                    <!-- Button to generate and download the pdf. Available for desktop. -->
-
-                    <div class="home__address bd-grid">
-                        <h2 class="section-title">Liên hệ</h2>
-                        <a target="_blank" href="https://www.google.com/maps/place/S%C3%B3c+S%C6%A1n,+H%C3%A0+N%E1%BB%99i,+Vi%E1%BB%87t+Nam/" class="home__info">
+                    <!--========== Contact ==========-->
+                </section>
+                <section class="address section">
+                    <h2 class="section-title">Liên hệ</h2>
+                    <div class="address__container bd-grid">
+                        <a target="_blank"
+                            href="https://www.google.com/maps/place/S%C3%B3c+S%C6%A1n,+H%C3%A0+N%E1%BB%99i,+Vi%E1%BB%87t+Nam/"
+                            class="home__info social__link">
                             <i class='bx bxs-map'></i> Hà Nội
                         </a>
-                        <a target="_blank" href="mailto:cuongedward97@gmail.com" class="home__info">
+                        <a target="_blank" href="mailto:cuongedward97@gmail.com" class="home__info social__link">
                             <i class='bx bxs-envelope'></i> cuongedward97@gmai.com
                         </a>
-                        <a href="tel:+84327388885" class="home__info">
+                        <a href="tel:+84327388885" class="home__info social__link">
                             <i class='bx bxs-phone'></i> +84 327 388 885
                         </a>
                     </div>
-
                 </section>
-
-                <!--========== Contact ==========-->
                 <section class="social section">
                     <h2 class="section-title small">Mạng xã hội</h2>
                     <div class="social__container bd-grid">
@@ -128,6 +130,28 @@
 
                 </section>
 
+
+
+
+                <!--========== SKILLS  ==========-->
+
+
+            </div>
+            <div class="resume__right">
+                <section class="skills section" id="skills">
+                    <h2 class="section-title">Kĩ năng</h2>
+                    <div class="skills__content bd-grid">
+                        <ul class="skills__data">
+                            <li class="skills__name"><span class="skills__circle"></span>HTML</li>
+                            <li class="skills__name"><span class="skills__circle"></span>CSS</li>
+                            <li class="skills__name"><span class="skills__circle"></span>Javascript</li>
+                        </ul>
+                        <ul class="skills__data">
+                            <li class="skills__name"><span class="skills__circle"></span>Photoshop</li>
+                            <li class="skills__name"><span class="skills__circle"></span>Sass</li>
+                        </ul>
+                    </div>
+                </section>
                 <!--========== EDUCATION ==========-->
                 <section class="education section" id="education">
                     <h2 class="section-title">Học Vấn</h2>
@@ -146,7 +170,7 @@
                         <div class="education__content">
                             <div class="education__time">
                                 <span class="education__rounder"></span>
-                                <!-- <span class="education__line"></span>   -->
+                                <span class="education__line"></span>
                             </div>
                             <div class="education__data bd-grid">
                                 <h3 class="education__title">Lập Trình Web</h3>
@@ -156,26 +180,6 @@
                         </div>
                     </div>
                 </section>
-
-
-                <!--========== SKILLS  ==========-->
-                <section class="skills section" id="skills">
-                    <h2 class="section-title">Kĩ năng</h2>
-                    <div class="skills__content bd-grid">
-                        <ul class="skills__data">
-                            <li class="skills__name"><span class="skills__circle"></span>HTML</li>
-                            <li class="skills__name"><span class="skills__circle"></span>CSS</li>
-                            <li class="skills__name"><span class="skills__circle"></span>Javascript</li>
-                        </ul>
-                        <ul class="skills__data">
-                            <li class="skills__name"><span class="skills__circle"></span>Photoshop</li>
-                            <li class="skills__name"><span class="skills__circle"></span>Sass</li>
-                        </ul>
-                    </div>
-                </section>
-            </div>
-
-            <div class="resume__right">
                 <!--========== EXPERIENCE ==========-->
                 <section class="experience section" id="experience">
                     <h2 class="section-title">Kinh Nghiệm</h2>
@@ -200,8 +204,26 @@
                 <!--========== CERTIFICATES ==========-->
                 <!-- <section class="certificate section" id="certificates">
                     <h2 class="section-title">Chứng chỉ</h2>
-
+                    
                 </section> -->
+                <!--========== INTERESTS ==========-->
+                <section class="interests section">
+                    <h2 class="section-title">Sở thích</h2>
+                    <div class="interests__container bd-grid">
+                        <div class="interests__content">
+                            <ion-icon class="interests__icon" name="walk"></ion-icon>
+                            <span class="interests__name">Đi bộ</span>
+                        </div>
+                        <div class="interests__content">
+                            <ion-icon class="interests__icon" name="game-controller"></ion-icon>
+                            <span class="interests__name">Game</span>
+                        </div>
+                        <div class="interests__content">
+                            <ion-icon class="interests__icon" name="logo-youtube"></ion-icon>
+                            <span class="interests__name">Youtube</span>
+                        </div>
+                    </div>
+                </section>
 
                 <!--========== REFERENCES ==========-->
                 <section class="references section" id="references">
@@ -241,30 +263,14 @@
 
                 </section> -->
 
-                <!--========== INTERESTS ==========-->
-                <section class="interests section">
-                    <h2 class="section-title">Sở thích</h2>
-                    <div class="interests__container bd-grid">
-                        <div class="interests__content">
-                            <ion-icon class="interests__icon" name="walk"></ion-icon>
-                            <span class="interests__name">Đi bộ</span>
-                        </div>
-                        <div class="interests__content">
-                            <ion-icon class="interests__icon" name="game-controller"></ion-icon>
-                            <span class="interests__name">Game</span>
-                        </div>
-                        <div class="interests__content">
-                            <ion-icon class="interests__icon" name="logo-youtube"></ion-icon>
-                            <span class="interests__name">Youtube</span>
-                        </div>
-                    </div>
-                </section>
             </div>
         </div>
     </main>
 
     <!--========== SCROLL TOP ==========-->
-    <a href="#home" class="scrolltop" id="scrolltop"><ion-icon name="caret-up-circle"></ion-icon></a>
+    <a href="#home" class="scrolltop" id="scrolltop">
+        <ion-icon name="caret-up-circle"></ion-icon>
+    </a>
 
 
     <!--========== HTML2PDF ==========-->

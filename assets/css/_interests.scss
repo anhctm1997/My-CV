@@ -2,6 +2,12 @@
  &__container{
      grid-template-columns: repeat(3,1fr);
      margin-top: $mb-2;
+     @media screen and (min-width: 968px) {
+         &{
+             grid-template-columns: repeat(4,1fr);
+             column-gap: 3.5rem;
+         }
+     }
  }
  &__content{
      display: flex;

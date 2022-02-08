@@ -2,6 +2,9 @@
 
     &__content{
         display: flex;
+        &:last-child .education__line{
+            display: none;
+        }
     }
     &__time{
         padding-right: 1rem;
@@ -41,6 +44,9 @@
 .experience{
     &__content{
         display: flex;
+        &:last-child .education__line{
+            display: none;
+        }
     }
     &__time{
         padding-right: 1rem;

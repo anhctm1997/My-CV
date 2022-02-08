@@ -1,15 +1,20 @@
 $header-height: 3rem;
-  
+
 /*========== Colors ==========*/
-$title-color: #0B0A0A;
-$text-color: #403A3A;
-$text-color-light: #707070;
-$container-color: #FAFAFA;
-$container-color-alt: #F0EFEF;
-$body-color: #FCFCFC;
+
+    $title-color: #0B0A0A;
+    $text-color: #403A3A;
+    $text-color-light: #707070;
+    $container-color: #FAFAFA;
+    $container-color-alt: #F0EFEF;
+    $body-color: #FCFCFC;
+    
+
+
 
 /*========== Font and typography ==========*/
-$body-font:'Comfortaa', cursive;
+$body-font:'Comfortaa',
+cursive;
 $h1-font-size: 1.5rem;
 $h2-font-size: 1.25rem;
 $h3-font-size: 1rem;
@@ -29,3 +34,14 @@ $mb-3: 1.5rem;
 /*========== z index ==========*/
 $z-tooltip: 10;
 $z-fixed: 100;
+
+/*========= CSS Variables ===========*/ 
+:root{
+    --title-color: #0B0A0A;
+    --text-color: #403A3A;
+    --text-color-light: #707070;
+    --container-color: #FAFAFA;
+    --container-color-alt: #F0EFEF;
+    --body-color: #FCFCFC;
+    }
+
