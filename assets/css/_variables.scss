@@ -1,20 +1,15 @@
+@use "sass:meta";
 $header-height: 3rem;
 
 /*========== Colors ==========*/
-
-    $title-color: #0B0A0A;
-    $text-color: #403A3A;
-    $text-color-light: #707070;
-    $container-color: #FAFAFA;
-    $container-color-alt: #F0EFEF;
-    $body-color: #FCFCFC;
-    
-
-
-
+$title-color: #0B0A0A;
+$text-color: #403A3A;
+$text-color-light: #707070;
+$container-color: #FAFAFA;
+$container-color-alt: #F0EFEF;
+$body-color: #FCFCFC;
 /*========== Font and typography ==========*/
-$body-font:'Comfortaa',
-cursive;
+$body-font:'Comfortaa', cursive;
 $h1-font-size: 1.5rem;
 $h2-font-size: 1.25rem;
 $h3-font-size: 1rem;
@@ -35,13 +30,27 @@ $mb-3: 1.5rem;
 $z-tooltip: 10;
 $z-fixed: 100;
 
-/*========= CSS Variables ===========*/ 
-:root{
-    --title-color: #0B0A0A;
-    --text-color: #403A3A;
-    --text-color-light: #707070;
-    --container-color: #FAFAFA;
-    --container-color-alt: #F0EFEF;
-    --body-color: #FCFCFC;
-    }
-
+/*========= CSS Variables ===========*/
+:root {
+    --header-height: #{meta.inspect($header-height)};
+    --title-color: #{meta.inspect($title-color)};
+    --text-color: #{meta.inspect($text-color)};
+    --text-color-light: #{meta.inspect($text-color-light)};
+    --container-color: #{meta.inspect($container-color)};
+    --container-color-alt: #{meta.inspect($container-color-alt)};
+    --body-color: #{meta.inspect($body-color)};
+    --mb-1: #{meta.inspect($mb-1)};
+    --mb-2: #{meta.inspect($mb-2)};
+    --mb-3: #{meta.inspect($mb-3)};
+    --z-tooltip: #{meta.inspect($z-tooltip)};
+    --z-fixed: #{meta.inspect($z-fixed)};
+    --body-font: #{meta.inspect($body-font)};
+    --h1-font-size: #{meta.inspect($h1-font-size)};
+    --h2-font-size: #{meta.inspect($h2-font-size)};
+    --h3-font-size: #{meta.inspect($h3-font-size)};
+    --font-medium: #{meta.inspect($font-medium)};
+    --font-semi-bold: #{meta.inspect($font-semi-bold)};
+    --normal-font-size: #{meta.inspect($normal-font-size)};
+    --small-font-size: #{meta.inspect($small-font-size)};
+    --smaller-font-size: #{meta.inspect($smaller-font-size)};
+}

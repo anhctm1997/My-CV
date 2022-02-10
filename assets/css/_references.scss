@@ -3,20 +3,20 @@
         gap: 0.25rem;
     }
     &__subtitle{
-        color: $text-color-light;
+        color: var(--text-color-light);
     }
     &__subtitle,
     &__contact{
-        font-size: $normal-font-size;
-        font-weight: $font-semi-bold;
+        font-size: var(--normal-font-size);
+        font-weight: var(--font-semi-bold);
     }
     &__contact a , li{
         text-decoration: none;
-        color: $text-color;
+        color: var(--text-color);
         line-height: 1.5;
     }
     &__title{
-        font-size: $h3-font-size;
+        font-size: var(--h3-font-size);
     }
     @media screen and(min-width :968px) {
         &__container{

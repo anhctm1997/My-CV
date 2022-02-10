@@ -4,8 +4,8 @@
     justify-content: space-between;
     align-items: center;
     &__logo, &__toggle{
-        color: $title-color;
-        font-weight: $font-medium;
+        color: var(--title-color);
+        font-weight: var(--font-medium);
     }
     &__logo{
         display: flex;
@@ -18,9 +18,9 @@
         height: 2rem;
         width: 2rem;
         border-radius: 50%;
-        border: 1px solid $text-color;
+        border: 1px solid var(--text-color);
         visibility: hidden;
-        background-color: $title-color;
+        background-color: var(--title-color);
         
     }
 
@@ -41,18 +41,18 @@
     &__link{
         display: flex;
         flex-direction: column;
-        font-size: $small-font-size;
-        color: $text-color-light;
-        font-weight: $font-medium;
+        font-size: var(--small-font-size);
+        color: var(--text-color-light);
+        font-weight: var(--font-medium);
         transition: 0.35s;
         &:hover{
-            color: $title-color;
-            margin-bottom: $mb-1;
+            color: var(--title-color);
+            margin-bottom: var(--mb-1);
         }
     }
     &__icon{
         font-size: 1.2rem;
-        margin: auto auto $mb-1 $mb-1;
+        margin: auto auto var(--mb-1) var(--mb-1);
 
     }
     @media screen and (max-width: 968px) {
@@ -63,14 +63,13 @@
             width: 100%;
             padding-top: 1rem;
             padding-bottom: 1rem;
-            background-color: $body-color;
+            background-color: var(--body-color);
             box-shadow: 0 -1px 0.5rem rgba($color: #000000, $alpha: 0.1);
-            z-index: $z-fixed;
+            z-index: var(--z-fixed);
             transition: 0.6s;
             border-radius: 8px 8px 0 0;
         }
         &__link{
-            text-align: center;
             & i {
                 margin-bottom: 0.5rem;
             }

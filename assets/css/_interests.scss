@@ -1,10 +1,10 @@
 .interests{
  &__container{
      grid-template-columns: repeat(3,1fr);
-     margin-top: $mb-2;
+     margin-top: var(--mb-2);
      @media screen and (min-width: 968px) {
          &{
-             grid-template-columns: repeat(4,1fr);
+             grid-template-columns: repeat(3,1fr);
              column-gap: 3.5rem;
          }
      }
@@ -16,7 +16,7 @@
  }
  &__icon{
      font-size: 1.5rem;
-     color: $text-color-light;
+     color: var(--text-color-light);
      margin-bottom: 0.25rem;
  }
 }

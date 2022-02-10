@@ -1,11 +1,11 @@
 .social{
     &__link{
-        color: $text-color;
+        color: var(--text-color);
         display: inline-flex;
         align-items: center;
-        font-size: $small-font-size;
+        font-size: var(--small-font-size);
         &:hover{
-            color: $title-color;
+            color: var(--title-color);
         }
     }
     &__container{
