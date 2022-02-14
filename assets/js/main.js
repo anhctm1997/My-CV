@@ -149,7 +149,7 @@ resumeButton.addEventListener('click', () => {
 
     // 2. The PDF is generated
 
-    generateResume()
+    setTimeout(generateResume(), 1000)
     // 3. The .scale-cv class is removed from the body after 5 seconds to return to normal size.
     setTimeout(removeScaleCv, 5000)
 })
